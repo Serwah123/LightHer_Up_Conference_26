@@ -1,0 +1,388 @@
+/* GENERAL */
+body {
+    margin: 0;
+    font-family: Poppins, Arial, sans-serif;
+    background: #fff8fc;
+    color: #333;
+}
+
+/* HERO SECTION */
+.hero {
+    position: relative;
+    height: 120vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.glass-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 40px;
+  backdrop-filter: blur(12px);
+  background: #46082f;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  font-style: italic;
+}
+
+nav ul {
+  list-style: none;
+
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+nav a:hover,
+nav a.active {
+  color:ff5fa8;
+}
+
+.btn {
+  padding: 8px 18px;
+  background: #FFC300;
+  color: #000 !important;
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    font-style:italic;
+    z-index: 1;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: #F4B400
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero {
+        height: 80vh;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+}
+
+/* COUNTDOWN */
+.countdown-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.5rem;
+}
+
+#countdown div {
+    background: #ffb3dd;
+    padding: 15px 20px;
+    border-radius: 10px;
+    min-width: 90px;
+}
+
+/* ABOUT */
+.about {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    color: #ff2ea6;
+}
+
+/* SPEAKERS SECTION */
+ .speakers-section {
+    padding: 70px 5%;
+    text-align: center;
+    background: #fff;
+}
+
+.section-title {
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #ff2ea6;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.speakers-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.speaker-card {
+    width: 260px;
+    padding: 20px;
+    background: #ffe6f2;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.speaker-card:hover {
+    transform: translateY(-8px);
+}
+
+.speaker-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.speaker-card h3 {
+    margin: 10px 0 5px;
+    color: #ff2ea6;
+}
+
+.speaker-card p {
+    color: #333;
+    font-size: 0.9rem;
+}
+
+/* PROGRAM SECTION */
+.program-section {
+    padding: 70px 5%;
+    background: #fff4fa;
+    text-align: center;
+}
+
+.program-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.program-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.program-card:hover {
+    transform: translateY(-6px);
+}
+
+.program-card h3 {
+    color: #ff2ea6;
+    margin-bottom: 8px;
+}
+
+.program-card .time {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 6px;
+}
+
+.program-card .desc {
+    color: #444;
+}
+
+
+
+/* REGISTRATION */
+.registration {
+    background: #ffe6f3;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.reg-form {
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.09);
+    border: 2px solid rgba(255, 0, 128, 0.2);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.reg-form label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+    color: #333;
+    font-size: 15px;
+    text-align: left;
+}
+
+.reg-form input,
+.reg-form select,
+.reg-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: 2px solid #FF1493; 
+    outline: none;
+    transition: 0.3s;
+    background: #fff;
+    
+}
+
+.reg-form input:focus,
+.reg-form select:focus,
+.reg-form textarea:focus {
+    border-color: #ff0080;
+    box-shadow: 0 0 8px rgba(255, 0, 128, 0.2);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 16px;
+    background: #FFC300; /* Your golden yellow */
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #ffb000;
+    transform: translateY(-2px);
+}
+
+
+
+label{
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #ff66c4;
+    border-radius: 6px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 15px;
+    background: #F4B400;
+    color: #000;
+    font-size: 1em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight:bold;
+}
+
+button:hover {
+    background: #d9007f;
+}
+
+
+/* SUCCESS MESSAGE */
+.success-message {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    color: green;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    background: #46082f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Her Up Conference 26</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HERO SECTION -->
+
+    <header class="glass-nav">
+  <div class="logo">LIGHT HER UP CONFERENCE 26</div>
+    <nav>
+  <ul>
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#speakers">Speakers</a></li>
+    <li><a href="#program">Program</a></li>
+    <li><a href="#register" class="btn">Register</a></li>
+  </ul>
+</nav>
+
+</header>
+
+    <header id="home" class="hero">
+        <div class="slideshow-container">
+            <div class="slide active">
+                <img src="Image/3 girls.png" class="hero-img" alt="Three Girls">
+            </div>
+            <div class="slide">
+                <img src="Image/Three Ladies.png" class="hero-img" alt="">Three Ladies
+            </div>
+        </div>
+        <div class="overlay"></div>
+        <div class="hero-text">
+            <h1>Herinspirer Ghana</h1>
+            <p class="conference-name">Light Her Up Conference 26</p>
+            <p class="theme"><strong>From Bold Dreams to Reality</strong></p>
+        </div>
+    </header>
+
+    <!-- COUNTDOWN -->
+    <section class="countdown-section">
+        <h2>Countdown to Conference Day</h2>
+        <div id="countdown">
+            <div><span id="days">00</span> Days</div>
+            <div><span id="hours">00</span> Hours</div>
+            <div><span id="minutes">00</span> Minutes</div>
+            <div><span id="seconds">00</span> Seconds</div>
+        </div>
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+        <h2>About the Conference</h2>
+        <p>
+            The Light Her Up Conference 26 is a transformative event organized by Herinspirer Ghana. 
+            It empowers young women with knowledge, confidence, and the tools they need to turn bold dreams into real achievements.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, distinctio? Consequuntur soluta earum adipisci ratione vero dolor velit nostrum quas et maxime officia quis voluptate, libero, tenetur, ex aliquam accusantium?
+        </p>
+    </section>
+
+    <!--SPEAKERS SECTION-->
+    <section id="speakers" class="speakers-section">
+    <h2 class="section-title">Meet Our Speakers</h2>
+    <p class="section-subtitle">Inspiring women turning bold dreams into reality</p>
+
+    <div class="speakers-container">
+
+        <div class="speaker-card">
+            <img src="Image/LightHer Speaker.jpg" alt="Speaker 1">
+            <h3>Mrs Anne Sarpong, Esq</h3>
+            <p>Founder, BoldWomen Africa</p>
+        </div>
+
+        <div class="speaker-card">
+            <img src="images/speaker2.jpg" alt="Speaker 2">
+            <h3>Linda Owusu</h3>
+            <p>Author & Personal Growth Coach</p>
+        </div>
+
+        <div class="speaker-card">
+            <img src="images/speaker3.jpg" alt="Speaker 3">
+            <h3>Nana Darkoah</h3>
+            <p>Entrepreneur & Youth Mentor</p>
+        </div>
+
+    </div>
+</section>
+ <!-- PROGRAM SECTION -->
+<section id="program" class="program-section">
+    <h2 class="section-title">Conference Program</h2>
+    <p class="section-subtitle">A day filled with learning, growth & empowerment</p>
+
+    <div class="program-container">
+
+        <div class="program-card">
+            <h3>Opening Session</h3>
+            <p class="time">9:00 AM – 9:45 AM</p>
+            <p class="desc">Welcome address, introduction & worship</p>
+        </div>
+
+        <div class="program-card">
+            <h3>Keynote Message</h3>
+            <p class="time">10:00 AM – 11:00 AM</p>
+            <p class="desc">From Bold Dreams to Reality — Living with Purpose</p>
+        </div>
+
+        <div class="program-card">
+            <h3>Panel Discussion</h3>
+            <p class="time">11:15 AM – 12:00 PM</p>
+            <p class="desc">Women in Leadership: Stories of Courage</p>
+        </div>
+
+        <div class="program-card">
+            <h3>Workshops</h3>
+            <p class="time">1:00 PM – 3:00 PM</p>
+            <p class="desc">Breakout sessions on career, confidence & spirituality</p>
+        </div>
+
+        <div class="program-card">
+            <h3>Closing Ceremony</h3>
+            <p class="time">3:15 PM – 4:00 PM</p>
+            <p class="desc">Prayer, awards & special announcements</p>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- Registration Form -->
+     <section id="register" class="registration form -section">
+     <h2 class="section-title">Register Here</h2>
+ <form action="https://formsubmit.co/veronicaboateng006@gmail.com" method="POST" class="reg-form">
+    <input type="hidden" name="_next" value="success.html">
+
+
+    <!-- FormSubmit Settings -->
+    <input type="hidden" name="_subject" value="New Conference Registration!">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_next" value="http://localhost:8000/success.html">
+
+    <!-- Debug: Check if JS is working -->
+    <script>console.log('HTML loaded, JS should work');</script>
+
+    <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" name="Full Name" placeholder="Enter your full name" required>
+    </div
+
+    <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" name="Email" placeholder="Enter your email address" required>
+    </div>
+
+    <div class="form-group">
+        <label>Phone Number</label>
+        <input type="tel" name="Phone" placeholder="e.g. 0241234567" required>
+    </div>
+
+    <div class="form-group">
+        <label>Age</label>
+        <input type="number" name="Age" placeholder="Enter your age" min="10" max="100" required>
+    </div>
+
+    <div class="form-group">
+        <label>Gender</label>
+        <select name="Gender" required>
+            <option value="" disabled selected>Select gender</option>
+            <option value="Female">Female</option>
+            <option value="Male">Male</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Occupation</label>
+        <select name="Occupation" required>
+            <option value="" disabled selected>Select occupation</option>
+            <option value="Student">Student</option>
+            <option value="Worker">Worker</option>
+            <option value="Other">Other</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>What do you do</label>
+        <input type="text" name="Occupation Details" placeholder="Enter your occupation details" required>
+
+    <div class="form-group">
+        <label>Level of Education</label>
+        <select name="Education Level" required>
+            <option value="" disabled selected>Select education level</option>
+            <option value="Basic">Basic (JHS/Primary)</option>
+            <option value="Secondary">Secondary (SHS/Tech/Vocational)</option>
+            <option value="Tertiary">Tertiary (University/College)</option>
+            <option value="Postgraduate">Postgraduate</option>
+            <option value="Other">Other</option>
+        </select>
+    <div class="form-group">
+        <label>Name of Institution / Workplace</label>
+        <input type="text" name="Institution" placeholder="Enter your school or workplace" required>
+    </div>
+
+    <div class="form-group">
+        <label>How did you hear about the program?</label>
+        <select name="Referral Source" required>
+            <option value="" disabled selected>Select one</option>
+            <option value="WhatsApp">WhatsApp</option>
+            <option value="Instagram">Instagram</option>
+            <option value="LinkedIn">LinkedIn</option>
+            <option value="Facebook">Facebook</option>
+            <option value="Youtube">Youtube</option>
+            <option value="Friend">A friend told me</option>
+            <option value="Church">Church</option>
+            <option value="School">School announcement</option>
+            <option value="Other">Other</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Why do you want to attend?</label>
+        <textarea name="Reason" rows="4" placeholder="Tell us briefly..." required></textarea>
+    </div>
+
+    <button type="submit" class="submit-btn">Submit Registration</button>
+</form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Herinspirer Ghana — All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
