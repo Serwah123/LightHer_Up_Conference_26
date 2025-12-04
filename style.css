@@ -144,7 +144,15 @@ nav a.active {
 /* COUNTDOWN */
 .countdown-section {
     text-align: center;
-    padding: 40px 20px;
+    padding: 80px 20px 40px;
+}
+
+.countdown-section h2 {
+    color: #ff2ea6;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
 #countdown {
@@ -155,10 +163,14 @@ nav a.active {
 }
 
 #countdown div {
-    background: #ffb3dd;
-    padding: 15px 20px;
-    border-radius: 10px;
-    min-width: 90px;
+    background: linear-gradient(135deg, #ffb3dd, #ff2ea6);
+    color: white;
+    padding: 20px 25px;
+    border-radius: 15px;
+    min-width: 100px;
+    box-shadow: 0 6px 15px rgba(255, 46, 166, 0.3);
+    font-weight: bold;
+    text-align: center;
 }
 
 /* ABOUT */
@@ -169,6 +181,16 @@ nav a.active {
 
 .about h2 {
     color: #ff2ea6;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    font-weight: 400;
+    max-width: 800px;
+    margin: 20px auto 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* SPEAKERS SECTION */
